@@ -28,6 +28,30 @@ Participants in this qualification level would be required to execute more compl
 
 ## SQL Quick References
 
+### Query modifiers or Clauses
+
+1. SELECT: Specifies the columns to be retrieved from the database.
+2. FROM: Specifies the table(s) from which to retrieve data.
+3. WHERE: Filters the rows based on specified conditions.
+4. GROUP BY: Groups the rows that have the same values into summary rows.
+5. HAVING: Filters groups of rows returned by the GROUP BY clause.
+6. ORDER BY: Sorts the result set by specified column(s) in ascending or descending order.
+7. LIMIT: Limits the number of rows returned by the query.
+8. OFFSET: Specifies the number of rows to skip before starting to return rows.
+9. JOIN: Combines rows from two or more tables based on a related column between them.
+10. INNER JOIN: Returns only the rows that have matching values in both tables.
+11. LEFT JOIN (or LEFT OUTER JOIN): Returns all rows from the left table, and the matched rows from the right table.
+12. RIGHT JOIN (or RIGHT OUTER JOIN): Returns all rows from the right table, and the matched rows from the left table.
+13. FULL JOIN (or FULL OUTER JOIN): Returns all rows when there is a match in either left or right table.
+14. UNION: Combines the result sets of two or more SELECT statements.
+15. UNION ALL: Similar to UNION but retains all rows, including duplicates.
+16. DISTINCT: Removes duplicate rows from the result set.
+17. AS: Renames a column or table with an alias.
+18. CASE: Specifies conditional logic within the query.
+19. ORDER BY: Sorts the result set by specified column(s) in ascending or descending order.
+20. FETCH: Retrieves rows from a cursor.
+21. FOR: Specifies locking behavior for rows retrieved by the query.
+
 ### SELECT Syntax
 
 ```sql
