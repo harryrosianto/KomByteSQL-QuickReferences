@@ -148,11 +148,21 @@ DROP INDEX table_name.index_name;
 ### IF-ELSE Syntax
 
 ```sql
-IF condition THEN
-    statement(s);
-ELSE
-    statement(s);
-END IF;
+IF Boolean_expression   
+     { sql_statement | statement_block }   
+ELSE   
+     { sql_statement | statement_block }
+```
+
+### TRY-CATCH Syntax
+
+```sql
+BEGIN TRY  
+     { sql_statement | statement_block }  
+END TRY  
+BEGIN CATCH  
+     { sql_statement | statement_block }
+END CATCH;
 ```
 
 ### CASE Syntax
@@ -164,6 +174,13 @@ CASE
     ...
     ELSE result
 END;
+```
+
+### WHILE Syntax
+
+```sql
+WHILE Boolean_expression   
+     { sql_statement | statement_block | BREAK | CONTINUE }
 ```
 
 ### GROUP BY Syntax
