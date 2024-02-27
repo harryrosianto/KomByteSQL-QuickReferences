@@ -145,6 +145,23 @@ ON table_name (column1, column2, ...);
 DROP INDEX table_name.index_name;
 ```
 
+### CREATE View Syntax
+
+```sql
+CREATE [ OR ALTER ] VIEW [ schema_name . ] view_name [ (column [ ,...n ] ) ]
+[ WITH <view_attribute> [ ,...n ] ]
+AS select_statement
+[ WITH CHECK OPTION ]
+[ ; ]  
+  
+<view_attribute> ::=
+{  
+    [ ENCRYPTION ]  
+    [ SCHEMABINDING ]  
+    [ VIEW_METADATA ]
+}
+```
+
 ### IF-ELSE Syntax
 
 ```sql
