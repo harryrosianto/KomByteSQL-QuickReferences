@@ -145,6 +145,68 @@ ON table_name (column1, column2, ...);
 DROP INDEX table_name.index_name;
 ```
 
+### IF-ELSE Syntax
+
+```sql
+IF condition THEN
+    statement(s);
+ELSE
+    statement(s);
+END IF;
+```
+
+### CASE Syntax
+
+```sql
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ...
+    ELSE result
+END;
+```
+
+### GROUP BY Syntax
+
+```sql
+SELECT column1, COUNT(column2)
+FROM table_name
+GROUP BY column1;
+```
+
+### HAVING Syntax
+
+```sql
+SELECT column1, COUNT(column2)
+FROM table_name
+GROUP BY column1
+HAVING COUNT(column2) > value;
+```
+
+### BETWEEN Syntax
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE column1 BETWEEN value1 AND value2;
+```
+
+### IN Syntax
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE column1 IN (value1, value2, ...);
+```
+
+### LIKE Syntax
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE column1 LIKE pattern;
+```
+
 ### Data Retrieval Tasks
 
 To retrieve data from a table, use the SELECT statement:
@@ -201,6 +263,38 @@ WHERE condition;
 SELECT t1.column1, t2.column2
 FROM table1 t1
 JOIN table2 t2 ON t1.common_column = t2.common_column;
+```
+
+### INNER JOIN Syntax
+
+```sql
+SELECT columns
+FROM table1
+INNER JOIN table2 ON table1.column = table2.column;
+```
+
+### LEFT JOIN Syntax
+
+```sql
+SELECT columns
+FROM table1
+LEFT JOIN table2 ON table1.column = table2.column;
+```
+
+### RIGHT JOIN Syntax
+
+```sql
+SELECT columns
+FROM table1
+RIGHT JOIN table2 ON table1.column = table2.column;
+```
+
+FULL OUTER JOIN Syntax
+
+```sql
+SELECT columns
+FROM table1
+FULL OUTER JOIN table2 ON table1.column = table2.column;
 ```
 
 ### User Defined Functions
